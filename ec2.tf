@@ -21,6 +21,7 @@ terraform {
 provider "aws" {
 
   region = "us-east-1"
+  profile = "leo"
   
 
   assume_role {
@@ -36,7 +37,7 @@ provider "aws" {
 
 
 resource "aws_instance" "web" {
-  ami           = ami-0166fe664262f664c
+  ami           = "ami-0166fe664262f664c"
   instance_type = "t3.micro"
 
   tags = {
