@@ -1,9 +1,9 @@
-terraform {
-  backend "s3" {
-    bucket = "example-bucket"
+# terraform {
+#   backend "s3" {
+#     bucket = "example-bucket"
 
 
-    key    = "path/to/state"
-    region = "us-east-1"
-  }
-}
+#     key    = "path/to/state"
+#     region = "us-east-1"
+#   }
+# }
